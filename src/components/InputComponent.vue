@@ -35,6 +35,10 @@
     </form>
 </template>
 <script lang="ts">
+import { defineComponent } from 'vue';
+import { BasicScene } from '@/Babylon/BasicScene';
+
+
 export default {
     data() {
         return {
@@ -46,6 +50,9 @@ export default {
         }
     }
 }
+
+
+
 </script>
 
 <style>

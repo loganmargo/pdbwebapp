@@ -7,6 +7,8 @@ import { toggleMenu } from "./ToggleMenu";
 import { skybox, CreateGroundMaterial, CreateDefaultMaterial, CreateTriangle } from "./Skybox";
 import * as PDB from "./coordinate.json"
 import { CreateStructure } from "./StructureRender";
+import * as doc from "../components/InputComponent.vue"
+
 
 export class BasicScene {
     scene: BABYLON.Scene;
@@ -31,6 +33,11 @@ export class BasicScene {
         const scene = new BABYLON.Scene(this.engine);
         scene.collisionsEnabled = true; 
         scene.enablePhysics()
+
+
+        const testingVal = doc.default.data.toString(); 
+        console.log(testingVal); 
+
         
         //Creates ground for player to walk along
         const ground = BABYLON.MeshBuilder.CreateGround(
@@ -39,6 +46,13 @@ export class BasicScene {
             this.scene
         );
         ground.material = CreateGroundMaterial(scene);
+
+
+        const val = document.getElementById("environmentStyle"); 
+        console.log(val);
+
+
+
 
         //takes in coordinates from JSON file
         const xCoord = PDB.x;
