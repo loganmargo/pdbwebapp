@@ -1,4 +1,4 @@
-# pdbwebapp
+# PDB Visualization
 We want to explore VR to visualize the PDB, the goal is to have a standalone tool to visualize any PDB, download the tiff image, and check the image in VR. We want to integrate the ZoomQA quality in it, so given any PDB, we also want to show the quality of each amino acid maybe using different color or showing a number between 0 and 1? 
 
 #Resources
