@@ -15,7 +15,6 @@ We want to explore VR to visualize the PDB, the goal is to have a standalone too
 ## Project setup
 ```
 npm install
-```
 npx json-server --watch data/db.json
 ```
 
